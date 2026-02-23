@@ -22,7 +22,6 @@
   --bad:#ffcccc;
   --ok:#b7f0c8;
 
-  /* compact sizing */
   --border:3px;
   --shadow:0 10px 24px rgba(0,0,0,.08);
   --pad:clamp(10px,2.2vw,16px);
@@ -194,7 +193,7 @@ h1{
   line-height:1.15;
 }
 
-/* ===== game 4: "Dat ass ..." ===== */
+/* ===== game 4 ===== */
 .sentence{
   display:flex;
   align-items:center;
@@ -255,7 +254,7 @@ h1{
 <section class="wrap hidden" id="g4">
   <h1>Dat ass …</h1>
   <div class="sentence">
-    <span>Dat ass</span>
+    <span>Ech iesse gär</span>
     <div class="inlineSq" id="nounSq">
       <img id="nounImg" alt="" style="width:80%;height:80%;object-fit:contain">
     </div>
@@ -270,18 +269,18 @@ h1{
 const AUDIO_BASE = "https://github.com/albrechtclaire1007/p1schmierekescht/raw/refs/heads/main/";
 
 const ITEMS = [
-  { id:'banann', word:'eng Banann', img:'https://i.postimg.cc/4nMSGNrS/banann.png', audio:'p1_banann.mp3' },
-  { id:'botter', word:'Botter', img:'https://i.postimg.cc/VdCHkP82/botter.png', audio:'p1_botter.mp3' },
-  { id:'gebees', word:'e Gebees', img:'https://i.postimg.cc/N5HPjvtY/gebees.png', audio:'p1_gebees.mp3' },
-  { id:'kamellen', word:'Kamellen', img:'https://i.postimg.cc/Ln108FSp/kamellen.png', audio:'p1_kamellen.mp3' },
-  { id:'keis', word:'e Kéis', img:'https://i.postimg.cc/ZCdD5zm4/keis.png', audio:'p1_keis.mp3' },
-  { id:'kichelchen', word:'e Kichelchen', img:'https://i.postimg.cc/svh0gCzg/kichelchen.png', audio:'p1_kichelchen.mp3' },
-  { id:'metsch', word:'eng Metsch', img:'https://i.postimg.cc/Czq6xp0f/metsch.png', audio:'p1_metsch.mp3' },
-  { id:'schmier', word:'Schmier', img:'https://i.postimg.cc/3dvbxQhv/schmier.png', audio:'p1_schmier.mp3' },
-  { id:'schockela', word:'Schockela', img:'https://i.postimg.cc/9r7NQH29/schockela.png', audio:'p1_schockela.mp3' },
-  { id:'schockelasbotter', word:'Schockelasbotter', img:'https://i.postimg.cc/Bjf787Zx/schockelasbotter.png', audio:'p1_schockelasbotter.mp3' },
-  { id:'uebst', word:'Uebst', img:'https://i.postimg.cc/hXRZJZ4M/uebst.png', audio:'p1_uebst.mp3' },
-  { id:'zoossiss', word:'eng Zoossiss', img:'https://i.postimg.cc/4YR2K24Q/zoossiss.png', audio:'p1_zoossiss.mp3' }
+  { id:'banann',           word:'eng Banann',         img:'https://i.postimg.cc/4nMSGNrS/banann.png',            audio:'p1_banann.mp3' },
+  { id:'botter',           word:'Botter',             img:'https://i.postimg.cc/VdCHkP82/botter.png',            audio:'p1_botter.mp3' },
+  { id:'gebees',           word:'e Gebees',           img:'https://i.postimg.cc/N5HPjvtY/gebees.png',            audio:'p1_gebees.mp3' },
+  { id:'kamellen',         word:'Kamellen',           img:'https://i.postimg.cc/Ln108FSp/kamellen.png',          audio:'p1_kamell.mp3' },
+  { id:'keis',             word:'e Kéis',             img:'https://i.postimg.cc/ZCdD5zm4/keis.png',              audio:'p1_keis.mp3' },
+  { id:'kichelchen',       word:'e Kichelchen',       img:'https://i.postimg.cc/svh0gCzg/kichelchen.png',        audio:'p1_kichelchen.mp3' },
+  { id:'metsch',           word:'eng Metsch',         img:'https://i.postimg.cc/Czq6xp0f/metsch.png',            audio:'p1_metsch.mp3' },
+  { id:'schmier',          word:'Schmier',            img:'https://i.postimg.cc/3dvbxQhv/schmier.png',           audio:'p1_schmier.mp3' },
+  { id:'schockela',        word:'Schockela',          img:'https://i.postimg.cc/9r7NQH29/schockela.png',         audio:'p1_schockel.mp3' },
+  { id:'schockelasbotter', word:'Schockelasbotter',   img:'https://i.postimg.cc/Bjf787Zx/schockelasbotter.png',  audio:'p1_schockelasbotter.mp3' },
+  { id:'uebst',            word:'Uebst',              img:'https://i.postimg.cc/hXRZJZ4M/uebst.png',             audio:'p1_uebst.mp3' },
+  { id:'zoossiss',         word:'eng Zoossiss',       img:'https://i.postimg.cc/4YR2K24Q/zoossiss.png',          audio:'p1_zoossiss.mp3' }
 ];
 
 /* ================= HELPERS ================= */
@@ -467,7 +466,7 @@ sayPlay.addEventListener('click',()=>{
 });
 resetG3();
 
-/* ================= GAME 4: "Dat ass ..." ================= */
+/* ================= GAME 4: "Ech iesse gär ..." ================= */
 const nounSq=document.getElementById('nounSq');
 const nounImg=document.getElementById('nounImg');
 const nounPlay=document.getElementById('nounPlay');
